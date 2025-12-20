@@ -1,0 +1,34 @@
+
+public class typeinheritance{
+    public static void main(String[] args){
+
+    }
+
+}
+class shape{
+    public void shap(){
+        System.out.println("this is the trinagle");
+        // base class
+    }
+
+}
+class triangle extends shape{
+     public void shap(int l , int b , int h){
+        System.out.println("1/2*base*hight");
+        // derived class singletion inherentance
+    }
+
+ class equilater extends triangle{
+     public void shap(int l, int b, int h){
+        System.out.println("i*b*h");
+        // multilevel inheritance         means derive class inside the derive class;
+    }
+ }
+ class equilater extends shape{
+     public void shap(int l, int b, int h){
+        System.out.println("i*b*h");
+        // herachal inheretance        means base class inside the derive class with base class;
+    }
+ }
+}
+
